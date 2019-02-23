@@ -254,8 +254,8 @@ nav li {
 nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fff;
-    font-size: 21px;
+    color: #f3efe0;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -287,7 +287,7 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/home-bg-2.jpg);
+    background-image: url(../img/home-bg-2.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -763,8 +763,7 @@ fieldset {
 }
 
 
-/* Responsive media queries
-==================================================*/
+/* Responsive media queries==================================================*/
 
 @media (max-width: 991px) {
     .portfolio .categories-grid .categories ul li a {
@@ -786,7 +785,7 @@ fieldset {
         line-height: 50px;
     }
     #home,
-    .disply-table {
+        .disply-table {
         height: 600px;
     }
     .about-border {
@@ -805,4 +804,13 @@ fieldset {
     nav li a {
         font-size: 10px;
     }
+}
+@media all and  (max-width:500px)
+{
+   #home
+   {
+      background-image: url(../img/home-bg-2f.jpg);
+      background-attachment: fixed; /* Le fond restera fixe */
+      background-repeat: no-repeat; /* Le fond ne sera pas répété */
+   }
 }
